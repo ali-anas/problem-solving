@@ -25,6 +25,13 @@ using namespace std;
 #define mpii unordered_map<int, int>
 #define mpll unordered_map<ll, ll>
 
+void file_io() {
+	#ifndef ONLINE_JUDGE
+		freopen("../../input.txt", "r", stdin);
+		freopen("../../output.txt", "w", stdout);
+	#endif
+}
+
 
 void solve1() {
 	// write your code here
@@ -155,6 +162,7 @@ int main(int argc, char const *argv[]) {
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);
 	cout.tie(0);
+	file_io();
 	solve4();
 	return 0;
 }
